@@ -46,7 +46,7 @@ function App() {
   console.log("CART STATE:",cartState);
   return (
     <div>
-      <Cart info={cartState.number} />
+      <Cart info={cartState} />
       <div className="main">
         {data.map((d) => (
           <Panel data={d} key={d.id} propCart={{ cartState, setCartState }} />
